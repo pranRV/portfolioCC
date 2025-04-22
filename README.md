@@ -5,8 +5,9 @@ Welcome to my personal portfolio project! This site showcases who I am, the proj
 ## Project Folder Structure
 
 portfolioCC/
-├── index.html               # Main HTML file containing the entire website structure
-├── README.md                # Description of the project and its structure
+|-- index.html               # Main HTML file containing the entire website structure
+|-- README.md                # Description of the project and its structure
+|-- Dockerfile               # Docker configuration to serve HTML via NGINX.
 
 
 ## About the Project
@@ -31,6 +32,15 @@ This portfolio is built using:
 2. Open `index.html` in your web browser.
 3. To edit content, simply modify the HTML in `index.html`.
 
+## Deployment Steps
+
+1. Push the HTML file to GitHub
+2. Create a new EC2 instance
+3. Clone the GitHub repository
+4. Create Dockerfile and build image
+5. Run Docker container
+6. Access via EC2 Public IP
+7. Push image to Docker Hub
 ---
 
 Feel free to reach out if you have any suggestions or feedback!
